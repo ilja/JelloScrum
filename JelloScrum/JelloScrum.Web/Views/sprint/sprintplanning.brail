@@ -88,11 +88,12 @@
       element  = $(this);
       $.ajax({        
           url: element.attr("href"),
-          success: function(html){
+          success: function(html){           
             updateTijd();
+            //voeg wat terug komt toe aan de sprintlog
             $("#sprintLogTable tbody").prepend(html);
-            element.parent().parent().remove();          
-             //voeg wat terug komt toe aan de sprintlog
+            //en remove andere kant
+            element.parent().parent().remove();             
           },
           error: function(html){
              // location.reload();

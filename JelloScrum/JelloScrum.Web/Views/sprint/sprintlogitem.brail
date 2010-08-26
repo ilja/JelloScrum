@@ -8,7 +8,7 @@
     ${OpmaakHelper.Tijd(story.Estimation)}
   </td>
   <td>
-    <a href="OntkoppelStoryVanSprint.rails?sprintId=${gekozenSprint.Id}&storyId=${story.Id}" class="button">
+    <a href="OntkoppelStoryVanSprint.rails?sprintId=${gekozenSprint.Id}&storyId=${story.Id}" class="button uitSprint">
       <img src="/content/images/go-previous.png" alt="Naar backlog" />naar backlog
     </a>
   </td>
