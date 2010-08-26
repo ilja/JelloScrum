@@ -1,0 +1,6 @@
+﻿Wat zouden de belangrijkste features moeten zijn?
+
+ - stories oppakken
+ - stories uitsplitsen in taken, en deze oppakken
+ - commentaar aan stories / tasks toevoegen
+ - bugs loggen
