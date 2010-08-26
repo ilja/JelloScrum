@@ -67,7 +67,7 @@
         <span style="font-weight: bold;">
           Notitie(s)
         </span><br class="clear"/>
-        ${MarkDownOutput(story.Notitie)}
+        ${MarkDownOutput(story.Note)}
       </div>
 
       <div style="margin-top: 12px;">
@@ -83,13 +83,22 @@
     </div>
   <br class="clear"/>
 
-    <div style="margin-top: 12px;">
+    <div style="margin-top: 12px;">      
+    
+      <a href="/story/Bewerk.rails?storyId=${story.Id}" class="button">
+        <img src="/content/images/edit.png" alt="bewerk" />Bewerk
+      </a>
+      
       <?brail if IsDefined("sprint"):?>
-      <a href="/Sprint/SprintBacklog.rails?sprintId=${sprint.Id}" class="button reset">Annuleren</a>
-      <?brail else: ?>
-      <a href="/Project/ProductBacklog.rails?projectId=${story.Project.Id}" class="button reset">Annuleren</a>
-      <?brail end ?>
-      <a href="/Story/bewerk.rails?storyId=${story.Id}" class="button wijzigen">Bewerken</a>
+		    <a href="/Sprint/SprintBacklog.rails?sprintId=${sprint.Id}" class="button">
+		      <img src="/content/images/view-refresh.png" alt="Cancel" />Annuleren
+		    </a>
+		  <?brail else: ?>
+		    <a href="/Project/ProductBacklog.rails?projectId=${story.Project.Id}" class="button">
+		      <img src="/content/images/view-refresh.png" alt="Cancel" />Annuleren
+		    </a>
+		  <?brail end ?>  
+         
       <br class="clear"/>
     </div>
   </div>

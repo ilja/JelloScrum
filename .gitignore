@@ -5,6 +5,7 @@ bin
 obj
 log
 *.suo
+*.pidb
 JelloScrum.xml
 JelloScrum.XML
 partcover-*.xml
@@ -18,3 +19,4 @@ TestResult.xml
 Thumbs.db
 Libs/Coverage/report.xslt
 Libs/Coverage/result.*
+*.userprefs
